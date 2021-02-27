@@ -1,0 +1,71 @@
+/* CSS files add styling rules to your content */
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 2em;
+  background: black !important;
+  color: white; 
+}
+
+
+h1 {
+  font-style: italic;
+  color:violet;
+  font-family: verdana, arial, sans-serif; 
+}
+button {
+padding : 10px;
+border-radius: 10px;
+}
+img{
+  height:100px
+  width:100px
+}
+
+#gameButtonArea > button {
+  width:200px;
+  height:200px;
+  margin:2px;
+}
+.hidden {
+  display: none;
+}
+#button1 {
+    background: lightgreen;
+}
+#button2 {
+    background: lightblue;
+}
+#button3 {
+    background: pink;
+}
+#button4 {
+    background: lightyellow;
+}
+#button5{
+  background:#ffa268;
+}
+#button6{
+  background: lilac;
+}
+#button1:active, #button1.lit{
+    background:green;
+    
+}
+#button2:active, #button2.lit {
+    background:blue;
+}
+#button3:active, #button3.lit {
+    background:red;
+    
+}
+#button4:active, #button4.lit {
+    background:yellow;
+}
+#button5:active, #button5.lit{
+  background: orange;
+}
+#button6:active, #button6.lit{
+  background: purple;
+}
+

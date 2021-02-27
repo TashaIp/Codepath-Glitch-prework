@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello!</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <style type="text/css">
+   body { background: black !important; } /* Adding !important forces the browser to overwrite the default style applied by Bootstrap */
+</style>
+  <body id = "grad" >
+    <h1><b>Light and Sound Memory Game!</b></h1>
+    
+    <p style="color:white;">
+     <b>Welcome to this game! Repeat the sound patterns by clicking on the square buttons.</b> 
+    </p>
+    <button id="startBtn" onclick="startGame()">Start</button>
+    <button id="stopBtn" class= "hidden" onclick="stopGame()">
+      Stop
+    </button>
+    <div id="gameButtonArea">
+      <button id = "button1" onclick="guess(1);myFunction1(); "  onmousedown="startTone(1);" onmouseup="stopTone();">
+        <img style="display:none;" class="img-responsive" id="greenpic"  src="https://cdn.glitch.com/12d5df3e-e838-4ee3-b85a-e26f074f17d2%2Fthumbnails%2Fzombie.png?1614288822645" height="100px" width="100px" />
+     </button>
+      <button id = "button2" onclick="guess(2);myFunction2();" onmousedown="startTone(2)" onmouseup="stopTone()">
+        <img style="display:none;" class="img-responsive" id="bluepic"  src="https://cdn.glitch.com/12d5df3e-e838-4ee3-b85a-e26f074f17d2%2Fthumbnails%2Fwizard.png?1614295310973" height="100px" width="100px" />
+      </button>
+      <button id = "button3" onclick="guess(3);myFunction3();" onmousedown="startTone(3)" onmouseup="stopTone()">
+        <img style="display:none;" class="img-responsive" id="redpic"  src="https://cdn.glitch.com/12d5df3e-e838-4ee3-b85a-e26f074f17d2%2Fthumbnails%2Ffairy.png?1614295394427" height="100px" width="100px" />
+      </button>
+      <button id = "button4" onclick="guess(4);myFunction4();" onmousedown="startTone(4)" onmouseup="stopTone()">
+        <img style="display:none;" class="img-responsive" id="yellowpic"  src="https://cdn.glitch.com/12d5df3e-e838-4ee3-b85a-e26f074f17d2%2Fthumbnails%2Frat.png?1614299639740" height="100px" width="100px" />
+      </button>
+      <button id = "button5" onclick="guess(5);myFunction5();" onmousedown="startTone(5)" onmouseup="stopTone()">
+        <img style="display:none;" class="img-responsive" id="orangepic"  src="https://cdn.glitch.com/12d5df3e-e838-4ee3-b85a-e26f074f17d2%2Fthumbnails%2Fangel.png?1614299696369" height="100px" width="100px" />
+      </button>
+      <button id = "button6" onclick="guess(6);myFunction6();" onmousedown="startTone(6)" onmouseup="stopTone()">
+        <img style="display:none;" class="img-responsive" id="purplepic"  src="https://cdn.glitch.com/12d5df3e-e838-4ee3-b85a-e26f074f17d2%2Fthumbnails%2Fskeleton.png?1614299530689" height="100px" width="100px" />
+      </button>
+      
+    </div>
+    <div >
+      <img src="https://cdn.glitch.com/12d5df3e-e838-4ee3-b85a-e26f074f17d2%2Fthumbnails%2Fgalaxy_icon-removebg-preview.png?1614320800697" alt="galaxy" class="position-absolute top-50 start-50">
+      <img src="https://cdn.glitch.com/12d5df3e-e838-4ee3-b85a-e26f074f17d2%2Fthumbnails%2Fshooting_star_icon-removebg-preview.png?1614320736740" alt="shooting star">
+      <img src="https://cdn.glitch.com/12d5df3e-e838-4ee3-b85a-e26f074f17d2%2Fthumbnails%2Fmoon_icon-removebg-preview.png?1614321310691" alt="moon" class="position-absolute top-0 end-0" height="200px" width="200px">
+      <img src="https://cdn.glitch.com/12d5df3e-e838-4ee3-b85a-e26f074f17d2%2Fthumbnails%2Fplanet_icon__1_-removebg-preview.png?1614322224200" alt="planet" class="position-absolute top-50 end-0">
+      <img src="https://cdn.glitch.com/12d5df3e-e838-4ee3-b85a-e26f074f17d2%2Fthumbnails%2Fspaceship_icon-removebg-preview.png?1614376752455" alt="spacehsip" class="position-absolute top-50 start-80" heigth="500px">
+    </div>
+    
+
+    
+  </body>
+</html>
